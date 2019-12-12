@@ -2682,6 +2682,11 @@ char *yytext;
 
 #include <ctype.h>
 #include <strings.h>
+#ifdef BACK_COMPAT
+#undef HAVE_GLOB
+#undef HAVE_GLOB_H
+#endif
+
 #ifdef HAVE_GLOB_H
 # include <glob.h>
 #endif

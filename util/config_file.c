@@ -60,6 +60,13 @@
 #include "sldns/wire2str.h"
 #include "sldns/parseutil.h"
 #include "iterator/iterator.h"
+
+//For glibc back-compat pruposes, glob is turned off
+#ifdef BACK_COMPAT
+#undef HAVE_GLOB
+#undef HAVE_GLOB_H
+#endif
+
 #ifdef HAVE_GLOB_H
 # include <glob.h>
 #endif

@@ -41,6 +41,9 @@
 
 #ifndef UTIL_LOG_H
 #define UTIL_LOG_H
+
+#include "config.h"
+
 struct sldns_buffer;
 
 /**
